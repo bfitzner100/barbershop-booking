@@ -1,7 +1,8 @@
 import { Button } from "./_components/ui/button"
 
 const Home = () => {
-  return <Button>Click me</Button>
+  const name = "John"
+  return <Button>{name}</Button>
 }
 
 export default Home
