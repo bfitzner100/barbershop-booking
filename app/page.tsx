@@ -3,6 +3,7 @@ import Header from "./_components/header"
 import { Button } from "./_components/ui/button"
 import { Input } from "./_components/ui/input"
 import Image from "next/image"
+import { Card } from "./_components/ui/card"
 
 const Home = () => {
   return (
@@ -19,15 +20,19 @@ const Home = () => {
             <SearchIcon />
           </Button>
         </div>
+
+        {/* BANNER */}
         <div className="relative mt-6 h-[150px] w-full">
           <Image
             alt="Agende em uma das nossas barbearias parceiras"
             src="/images/Banner_1.svg"
             width={350}
             height={150}
-            className="object-cover"
+            className="rounded-xl object-cover"
           />
         </div>
+        {/* AGENDAMENTO */}
+        <Card className=""></Card>
       </div>
     </div>
   )
