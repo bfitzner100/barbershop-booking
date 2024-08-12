@@ -1,5 +1,5 @@
 {
-    "WillLuke.nextjs.addTypesOnSave": true,
+    "WillLuke.nextjs.addTypesOnSave": false,
     "WillLuke.nextjs.hasPrompted": true,
     "editor.autoIndent": "full",
     // Defining custom colors instead of default "Rainbow" for dark backgrounds.
