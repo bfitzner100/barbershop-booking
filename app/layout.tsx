@@ -16,6 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Plataforma de catálogo e reservas de barbearias"
+        />
+        <title>FSW BARBER</title>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
