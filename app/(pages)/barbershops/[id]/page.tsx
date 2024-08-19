@@ -1,3 +1,4 @@
+import PhoneItem from "@/app/_components/phone-item"
 import ServiceItem from "@/app/_components/service-item"
 import { Button } from "@/app/_components/ui/button"
 import { Card, CardContent } from "@/app/_components/ui/card"
@@ -80,6 +81,18 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
             <ServiceItem key={service.id} service={service} />
           ))}
         </div>
+      </div>
+
+      {/** CONTATOS */}
+
+      <div className="space-y-4 p-5">
+        <Card>
+          <CardContent className="space-y-2 px-3 py-2">
+            {barbershop.phones.map((phone) => {
+              return <PhoneItem key={phone} phone={phone} />
+            })}
+          </CardContent>
+        </Card>
       </div>
     </div>
   )
